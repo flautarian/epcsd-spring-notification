@@ -17,7 +17,6 @@ public class KafkaClassListener {
     @KafkaListener(topics = KafkaConstants.SHOW_TOPIC + KafkaConstants.SEPARATOR + KafkaConstants.COMMAND_ADD, groupId = "group-1")
     void showAdded(Show show) {
         log.trace("showAdded");
-
         notificationService.notifyShowCreation(show);
     }
 }
