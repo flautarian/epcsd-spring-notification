@@ -2,6 +2,8 @@ package edu.uoc.epcsd.notification.pojos;
 
 import lombok.*;
 
+import java.util.ArrayList;
+
 @ToString(exclude = "shows")
 @Getter
 @Setter
